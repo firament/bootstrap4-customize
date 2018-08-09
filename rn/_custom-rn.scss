@@ -6,8 +6,6 @@
   and build
 */
 
-$blak-ful: #212529; // What is this one for? still needed?
-
 $grays: map-merge(
   (
     "100": $gray-100,
@@ -23,6 +21,48 @@ $grays: map-merge(
   ),
   $grays
 );
+
+$rmny:    #d9534f !default;
+
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800,
+    "rmny":       $rmny
+  ),
+  $colors
+);
+
+$primary:       #d9534f !default;
+$secondary:     #d98f4f !default;
+$tertiary:      #307f83 !default;
+
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "tertiary":   $tertiary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
 
 // Options
 $enable-shadows:            true !default;
@@ -60,6 +100,10 @@ $display3-size:               4rem !default;
 $display4-size:               3rem !default;
 
 $small-font-size:             70% !default;
+
+// Tables
+$table-head-bg:               $secondary !default;
+$table-head-color:            $gray-900 !default;
 
 
 /*

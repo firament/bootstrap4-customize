@@ -3,6 +3,6 @@
 
 ## TODO: 
 > Items specific to this project
-- [ ] Add fixed footer
+- [x] Add fixed footer
 - [ ] 
 
