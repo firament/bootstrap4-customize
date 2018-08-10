@@ -22,7 +22,7 @@ $grays: map-merge(
   $grays
 );
 
-$rmny:    #d9534f !default;
+$rmny:    #307f83 !default;
 
 $colors: map-merge(
   (
@@ -44,9 +44,9 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       #d9534f !default;
+$primary:       #307f83 !default;
 $secondary:     #d98f4f !default;
-$tertiary:      #307f83 !default;
+$tertiary:      #d9534f !default;
 
 $theme-colors: map-merge(
   (
