@@ -1,0 +1,141 @@
+/*
+  Bootstrap v4.3.1
+  Custom overides for GPM
+  only Changes from default file will are here, for reference.
+
+  To Generate dist files,
+    1. Merge changes from here to file 'updates/_variables.scss'
+    2. Replace file '[bootstrap-folder]/scss/_variables.scss' with file 'updates/_variables.scss'
+    3. build
+  Step 2, 3 are automated by script 'rebuild.sh'
+*/
+
+
+
+//
+// Color system
+//
+
+$cstm-1:   #ffe0c0  !default;
+$cstm-2:   #f5b67a  !default;
+$cstm-3:   #e0e0e0  !default;
+
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+    "blk": $black  
+  ),
+  $grays
+);
+
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "cstm-pri":   $cstm-1,
+    "cstm-sec":   $cstm-2,
+    "cstm-alt":   $cstm-3,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Options
+//
+$enable-shadows:                              true !default;
+// $enable-gradients:                            false !default;
+
+// Body
+//
+$body-color:                $black !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+$grid-gutter-width:           20px !default;
+
+// Components
+// Define common padding and border radius sizes and more.
+//
+$border-color:                $gray-600 !default;
+$component-active-bg:         theme-color("cstm-pri") !default;
+
+// Typography
+// Font, line-height, and color for body text, headings, and more.
+//
+
+// New entry
+$font-family-serif:           "Cambria", "Caladea", serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Calibri", "Carlito", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+/*
+  TODO: display?-size
+  Arrange appropiate values
+  display4 should be progression from h1
+  */
+
+$h1-font-size:                $font-size-base * 1.75 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
+$h3-font-size:                $font-size-base * 1.25 !default;
+$h4-font-size:                $font-size-base * 1 !default;
+$h5-font-size:                $font-size-base * 1 !default;
+$h6-font-size:                $font-size-base !default;
+
+// $headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        $font-family-serif !default;
+$headings-color:              $gray-800 !default;
+
+$display1-size:               4rem !default;
+$display2-size:               3rem !default;
+$display3-size:               2.5rem !default;
+$display4-size:               2rem !default;
+
+$small-font-size:             70% !default;
+
+// Tables
+//
+$table-head-bg:               $cstm-3 !default;
+$table-head-color:            $gray-900 !default;
+
+
+/*
+* Analyze and customize the following
+*/
+// Get syntax of shadow definition
+$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
+$btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
+$input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
+$input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+$custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1) !default;
+$custom-control-indicator-checked-box-shadow:   none !default;
+$custom-control-indicator-focus-box-shadow:     0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
+$custom-control-indicator-active-box-shadow:    none !default;
+$custom-checkbox-indicator-indeterminate-box-shadow:  none !default;
+$custom-select-box-shadow:          inset 0 1px 2px rgba($black, .075) !default;
+$custom-select-focus-box-shadow:    0 0 0 $custom-select-focus-width rgba($custom-select-focus-border-color, .5) !default;
+$custom-range-track-box-shadow:     inset 0 .25rem .25rem rgba($black, .1) !default;
+$custom-range-thumb-focus-box-shadow: 0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
+$custom-file-focus-box-shadow:      $input-btn-focus-box-shadow !default;
+$custom-file-box-shadow:            $input-box-shadow !default;
+$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
+$popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
+$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
+$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
+$thumbnail-box-shadow:              0 1px 2px rgba($black, .075) !default;
+$close-text-shadow:                 0 1px 0 $white !default;
