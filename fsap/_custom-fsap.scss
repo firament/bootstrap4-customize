@@ -1,12 +1,24 @@
 /*
-  Bootstrap v4.1.2
+  Bootstrap v4.3.1
   Custom overides for fsap
+  only Changes from default file will are here, for reference.
 
-  Update in [bootstrap-folder]/scss/_variables.scss
-  and build
+  To Generate dist files,
+    1. Merge changes from here to file 'updates/_variables.scss'
+    2. Replace file '[bootstrap-folder]/scss/_variables.scss' with file 'updates/_variables.scss'
+    3. build
+  Step 2, 3 are automated by script 'rebuild.sh'
 */
 
-$blak-ful: #212529; // What is this one for? still needed?
+
+
+//
+// Color system
+//
+
+$fsap-1:   #6610f2  !default;
+$fsap-2:   #ffba00  !default;
+$fsap-3:   #ddfe00  !default;
 
 $grays: map-merge(
   (
@@ -19,42 +31,18 @@ $grays: map-merge(
     "700": $gray-700,
     "800": $gray-800,
     "900": $gray-900,
-    "blk": $black
+    "blk": $black  
   ),
   $grays
 );
-
-$fsap:    #6610f2 !default;
-
-$colors: map-merge(
-  (
-    "blue":       $blue,
-    "indigo":     $indigo,
-    "purple":     $purple,
-    "pink":       $pink,
-    "red":        $red,
-    "orange":     $orange,
-    "yellow":     $yellow,
-    "green":      $green,
-    "teal":       $teal,
-    "cyan":       $cyan,
-    "white":      $white,
-    "gray":       $gray-600,
-    "gray-dark":  $gray-800,
-    "fsap":       $fsap
-  ),
-  $colors
-);
-
-$primary:       #6610f2 !default;
-$secondary:     #ffba00 !default;
-$tertiary:      #ddfe00 !default;
 
 $theme-colors: map-merge(
   (
     "primary":    $primary,
     "secondary":  $secondary,
-    "tertiary":   $tertiary,
+    "fsap-pri":   $fsap-1,
+    "fsap-sec":   $fsap-2,
+    "fsap-alt":   $fsap-3,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,
@@ -65,46 +53,63 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-
 // Options
-$enable-shadows:            true !default;
-$enable-gradients:          false !default;
+//
+$enable-shadows:                              true !default;
+// $enable-gradients:                            false !default;
 
 // Body
 $body-color:                $black !default;
 
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+$grid-gutter-width:           20px !default;
+
 // Components
+//
+// Define common padding and border radius sizes and more.
+
 $border-color:                $gray-600 !default;
 
-// Fonts
-// New entry
-$font-family-serif:           "Cambria", "Caladea", serif !default;
+$component-active-bg:         theme-color("fsap-pri") !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-serif:           "Cambria", "Caladea", serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-sans-serif:      "Calibri", "Carlito", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-family-base:            $font-family-sans-serif !default;
 
 /*
   TODO: display?-size
   Arrange appropiate values
   display4 should be progression from h1
+  */
 
-  $h1-font-size:                $font-size-base * 2.5 !default;
-  $h2-font-size:                $font-size-base * 2 !default;
-  $h3-font-size:                $font-size-base * 1.75 !default;
-  $h4-font-size:                $font-size-base * 1.5 !default;
-  $h5-font-size:                $font-size-base * 1.25 !default;
-  $h6-font-size:                $font-size-base !default;
-*/
+// $h1-font-size:                $font-size-base * 1.75 !default;
+// $h2-font-size:                $font-size-base * 1.5 !default;
+// $h3-font-size:                $font-size-base * 1.25 !default;
+// $h4-font-size:                $font-size-base * 1 !default;
+// $h5-font-size:                $font-size-base * 1 !default;
+// $h6-font-size:                $font-size-base !default;
 
+// $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        $font-family-serif !default;
+$headings-color:              $gray-800 !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5rem !default;
-$display3-size:               4rem !default;
-$display4-size:               3rem !default;
+$display1-size:               4rem !default;
+$display2-size:               3rem !default;
+$display3-size:               2.5rem !default;
+$display4-size:               2rem !default;
 
 $small-font-size:             70% !default;
 
 // Tables
-$table-head-bg:               $tertiary !default;
+$table-head-bg:               $fsap-3 !default;
 $table-head-color:            $gray-900 !default;
 
 

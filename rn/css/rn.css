@@ -37,3 +37,7 @@
 		, 5px 5px 7px #555
 		;
 }
+
+.sample-var-use{
+	color: var(--purple);
+}

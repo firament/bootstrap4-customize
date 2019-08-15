@@ -1,12 +1,20 @@
 /*
-  Bootstrap v4.1.2
-  Custom overides for fsap
+  Bootstrap v4.3.1
+  Custom overides for babji.firament
+  only Changes from default file will are here, for reference.
 
-  Update in [bootstrap-folder]/scss/_variables.scss
-  and build
+  To Generate dist files,
+    1. Merge changes from here to file 'updates/_variables.scss'
+    2. Replace file '[bootstrap-folder]/scss/_variables.scss' with file 'updates/_variables.scss'
+    3. build
+  Step 2, 3 are automated by script 'rebuild.sh'
 */
 
-$blak-ful: #212529 !default; // What is this one for? still needed?
+// Color system
+
+$bf-1:     #dd0707  !default;
+$bf-2:     #ffba00  !default;
+$bf-3:     #5bd1e6  !default;
 
 $grays: map-merge(
   (
@@ -24,8 +32,6 @@ $grays: map-merge(
   $grays
 );
 
-$bf:    #ffba00 !default;
-
 $colors: map-merge(
   (
     "blue":       $blue,
@@ -40,21 +46,18 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800,
-    "bf":         $bf
+    "gray-dark":  $gray-800
   ),
   $colors
 );
-
-$primary:       #ddfe00 !default;
-$secondary:     #6610f2 !default;
-$tertiary:      #ffba00 !default;
 
 $theme-colors: map-merge(
   (
     "primary":    $primary,
     "secondary":  $secondary,
-    "tertiary":   $tertiary,
+    "bf-pri":     $bf-1,
+    "bf-sec":     $bf-2,
+    "bf-alt":     $bf-3,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,
@@ -62,8 +65,7 @@ $theme-colors: map-merge(
     "light":      $light,
     "dark":       $dark,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800,
-    "bf":         $bf
+    "gray-dark":  $gray-800
   ),
   $theme-colors
 );
@@ -71,18 +73,24 @@ $theme-colors: map-merge(
 
 // Options
 $enable-shadows:            true !default;
-$enable-gradients:          false !default;
+// $enable-gradients:          false !default;
 
 // Body
 $body-color:                $black !default;
 
+// Grid columns
+//
+$grid-gutter-width:           20px !default;
+
 // Components
-$border-color:                $gray-600 !default;
+$border-color:                $gray-800 !default;
+$component-active-bg:         theme-color("bf-sec") !default;
 
 // Fonts
 // New entry
-$font-family-serif:           "Cambria", "Caladea", serif !default;
+$font-family-serif:           "Cambria", "Caladea", serif, -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-sans-serif:      "Calibri", "Carlito", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 /*
   TODO: display?-size
@@ -107,7 +115,7 @@ $display4-size:               2rem !default;
 $small-font-size:             70% !default;
 
 // Tables
-$table-head-bg:               $tertiary !default;
+$table-head-bg:               $bf-3 !default;
 $table-head-color:            $gray-900 !default;
 
 
