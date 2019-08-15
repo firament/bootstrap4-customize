@@ -5,11 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* 
+
   Customized for babji.firament
   from Bootstrap v4.3.1
   
-  To generate dist files,
-  run script ../_variables.scss
 */
 :root {
   --blue: #007bff;

@@ -1,9 +1,8 @@
 /* 
+
   Customized for fsap
   from Bootstrap v4.3.1
   
-  To generate dist files,
-  run script ../_variables.scss
 */
 //
 // Variables
@@ -104,7 +103,9 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
   ),
   $theme-colors
 );
@@ -180,7 +181,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $black !default;
 
 
 // Links
@@ -307,11 +308,11 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h1-font-size:                $font-size-base * 1.75 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
+$h3-font-size:                $font-size-base * 1.25 !default;
+$h4-font-size:                $font-size-base * 1 !default;
+$h5-font-size:                $font-size-base * 1 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
@@ -320,10 +321,10 @@ $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              $gray-800 !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5rem !default;
-$display3-size:               4rem !default;
-$display4-size:               3rem !default;
+$display1-size:               4rem !default;
+$display2-size:               3rem !default;
+$display3-size:               2.5rem !default;
+$display4-size:               2rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;

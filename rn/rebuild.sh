@@ -6,6 +6,7 @@
 #         2. Copy back compiled dist file                                                          #
 #                                                                                                  #
 ####################################################################################################
+# bash rn/rebuild.sh  2>&1 | tee ${HOME}/Documents/bs-rn-build.txt
 
 source $(dirname $0)/../10-Notes/set_paths.sh;
 
