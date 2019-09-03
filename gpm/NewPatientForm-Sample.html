@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"
+		  href="css/bootstrap-gpm.css">
+	<link rel="stylesheet"
+		  href="css/gpm.css">
+
+	<title>Complex Form Sample - Gate Pass Manager</title>
+</head>
+
+<body>
+
+	<!-- ========================================================================================================== -->
+	<!-- Masthead -->
+	<nav class="navbar bg-cstm-pri-light">
+		<div class="d-flex align-items-center w-100">
+
+			<a href="../default.htm"
+			   class="text-cstm-sec-light rounded-circle border border-cstm-pri-dark p-2 h4 shadow-text-light shadow-light">GPM</a>
+
+			<div class="d-flex align-items-start flex-fill align-items-baseline">
+				<h1 class="pl-3 shadow-text-light text-cstm-sec-light">Gate Pass Manager</h1>
+				<div class="pl-3 text-cstm-dark d-none d-md-block">A Novelty Data Production.</div>
+			</div>
+
+			<div class="d-flex flex-column justify-content-end">
+				<div class="text-right text-cstm-dark">Anonymous</div>
+				<a href="#"
+				   class="text-right text-cstm-dark">Sign in</a>
+			</div>
+
+		</div>
+
+	</nav>
+
+	<!-- ========================================================================================================== -->
+	<!-- Menu bar -->
+	<nav class="navbar navbar-expand-md navbar-light py-0">
+		<!--
+		<a class="navbar-brand" href="../default.htm">Home</a>
+		-->
+		<button class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse"
+			 id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"
+					id="nvlists">
+					<a class="nav-link"
+					   href="#">List</a>
+				</li>
+
+				<li class="nav-item dropdown"
+					id="nvform">
+					<a class="nav-link dropdown-toggle"
+					   href="Products"
+					   id="navbarDropdown"
+					   role="button"
+					   data-toggle="dropdown"
+					   aria-haspopup="true"
+					   aria-expanded="false">
+						Products
+					</a>
+					<div class="dropdown-menu"
+						 aria-labelledby="navbarDropdown">
+						<a class="dropdown-item"
+						   href="#">List Products</a>
+						<a class="dropdown-item"
+						   href="#">Add New Product</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item"
+						   href="#">List Inactive Products</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown"
+					id="nvform">
+					<a class="nav-link dropdown-toggle"
+					   href="Users"
+					   id="navbarDropdown"
+					   role="button"
+					   data-toggle="dropdown"
+					   aria-haspopup="true"
+					   aria-expanded="false">
+						Users
+					</a>
+					<div class="dropdown-menu"
+						 aria-labelledby="navbarDropdown">
+						<a class="dropdown-item"
+						   href="#">List Users</a>
+						<a class="dropdown-item"
+						   href="#">Add New User</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link disabled"
+					   href="#">System</a>
+				</li>
+
+				<li class="nav-item">
+					<a id="navSignOut"
+					   class="nav-link disabled"
+					   href="#">Signout</a>
+				</li>
+
+			</ul>
+
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2 border-cstm-pri"
+					   type="search"
+					   placeholder="Search"
+					   aria-label="Search">
+				<button class="btn btn-outline-cstm-pri my-2 my-sm-0"
+						type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+
+	<!-- ========================================================================================================== -->
+
+	<div class="container-fluid">
+	</div>
+
+
+	<div class="container-fluid">
+
+
+		<div class="row p-3">
+
+			<!-- Padding column to push content to right -->
+			<div class="col-1 col-sm-3 col-md-6 col-lg-8 col-xl-8">
+				<!-- <div class=""></div> -->
+			</div>
+
+			<div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xl-4 border border-cstm-pri-light shadow-light">
+				<div class="h1 display-4 mt-3 text-cstm-pri-dark shadow-text-outline">New Patient Gate Pass</div>
+
+				<form class="">
+
+					<div class="form-row border border-cstm-pri-light m-1 mb-3 p-1 shadow-light">
+						<div class="col-12">
+							<div class="small text-secondary mb-2">Pre-Selected Options:</div>
+						</div>
+						<div class="col">
+							<div class="form-control bg-light h4 text-center mb-0">Cardiology</div>
+							<div class="small text-secondary text-center">Department Selected.</div>
+						</div>
+						<div class="col">
+							<div class="form-control bg-light h4 text-center mb-0">First Visit</div>
+							<div class="small text-secondary text-center">Visit Type Selected.</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="formGroupExampleInput">Mobile Number:</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-cstm-pri-light"
+									  id="basic-addon1">+91</span>
+							</div>
+							<input type="text"
+								   class="form-control"
+								   placeholder="000 000 0000"
+								   aria-label="Mobile Number"
+								   aria-describedby="Mobile numberof the patient">
+						</div>
+						<div class="small text-secondary">Mobile Number, Required for all First visit patients.</div>
+					</div>
+
+
+					<div class="form-group">
+						<label for="formGroupExampleInput">Hospital Number:</label>
+						<input type="text"
+							   class="form-control text-uppercase"
+							   id="formGroupExampleInput"
+							   placeholder="Hospital Number">
+						<div class="small text-secondary">Hospital Number, Required for all followup visit patients.
+						</div>
+					</div>
+
+					<!-- <legend>Additional Details:</legend> -->
+
+					<div class="form-row my-4">
+						<div class="col-12">
+							<label for="attendantcount">Attendant Count:</label>
+						</div>
+						<div class="col-3">
+							<input type="number"
+								   class="form-control"
+								   min="0"
+								   id="attendantcount"
+								   placeholder="0">
+						</div>
+						<div class="col">
+							<div class="text-secondary">Number of attendants accompanying the patient.
+								Includes the driver of the vehicle, if any.</div>
+						</div>
+
+					</div>
+
+
+					<div class="form-row mb-3">
+						<div
+							 class="col-12 h3 text-cstm-pri w-100 p-2 mb-3 border-bottom border-cstm-dark shadow-text-outline">
+							Other Options:
+						</div>
+					</div>
+
+					<div class="form-row mb-3">
+						<div class="col-12">
+							<div class="form-group form-check">
+								<input type="checkbox"
+									   class="form-check-input"
+									   id="chkwc">
+								<label class="form-check-label"
+									   for="chkwc">Require Wheel chair</label>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<label for="formGroupExampleInput">Wheelchair Number:</label>
+						</div>
+						<div class="col-8">
+							<input type="text"
+								   class="form-control text-uppercase"
+								   id="formGroupExampleInput"
+								   placeholder="Auto assigned by system">
+							<div class="form-text small text-secondary">Keep empty to be assigned an availaible
+								wheelchair by the
+								system.</div>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="form-row">
+						<div class="col-12">
+							<div class="form-group form-check">
+								<input type="checkbox"
+									   class="form-check-input"
+									   id="chkvp">
+								<label class="form-check-label"
+									   for="chkvp"> Require Vehicle Parking</label>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<div class="form-group">
+								<label for="VehicleType">Vehicle Type:</label>
+								<select class="custom-select"
+										id="VehicleType">
+									<option value="0">Select One...</option>
+									<option value="1">Bike</option>
+									<option value="2">Scooter</option>
+									<option value="3">Car</option>
+									<option value="4">Ambulance</option>
+									<option value="99">Other</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<div class="form-group">
+								<label for="formGroupExampleInput"> Vehicle Number:</label>
+								<input type="text"
+									   class="form-control text-uppercase"
+									   id="formGroupExampleInput"
+									   placeholder="Registration Number of the vehicle">
+							</div>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="form-row">
+						<div class="col">
+							<textarea class="form-control"
+									  id="Note"
+									  placeholder="Generic note for additional information."
+									  rows="2"></textarea>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="form-row">
+						<div class="col p-3">
+							<button type="button"
+									class="btn btn-lg w-100 btn-outline-cstm-pri-dark text-cstm-alt-1-dark shadow-light">Save</button>
+						</div>
+
+						<div class="col p-3">
+							<button type="button"
+									class="btn btn-lg w-100 btn-cstm-pri border-cstm-dark text-cstm-alt-1-dark shadow-light">Save &
+								Print</button>
+						</div>
+					</div>
+
+				</form>
+
+
+			</div> <!-- Column -->
+
+			<!-- 
+			input type = 
+				tel
+				text
+				password
+				email
+				number
+				reset
+		-->
+
+		</div> <!-- Row -->
+
+
+	</div> <!-- container-fluid -->
+
+
+	<!-- ========================================================================================================== -->
+
+
+
+	<!-- ========================================================================================================== -->
+
+	<!-- ========================================================================================================== -->
+
+	<!-- ========================================================================================================== -->
+	<hr class="p-2">
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Fluid jumbotron</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+			</p>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../dist/js/jquery-3.3.1.min.js"></script>
+	<!-- script src="../dist/js/jquery-3.3.1.slim.min.js"></script -->
+	<script src="js/bootstrap-gpm.bundle.min.js"></script>
+
+
+	<!-- ========================================================================================================== -->
+	<!-- fixed footer -->
+	<div class="w-100 p-1">
+		<div class="row">
+			<div>&nbsp;</div>
+		</div>
+	</div>
+	<div class="w-100 fixed-bottom">
+		<div class="text-center text-black-50 small">powered by
+			<a class="text-black-50"
+			   href="http://firament.com/">firament ESP</a>
+		</div>
+	</div>
+
+	<!-- ========================================================================================================== -->
+
+	<footer class="border-top footer text-muted bg-cstm-alt p-1">
+		<div class="container text-center h6 small">
+			Developed by Novelty Data Solutions LLP
+		</div>
+	</footer>
+
+	<small class="text-muted">
+		Someone famous in
+		<cite title="Source Title">Source Title</cite>
+	</small>
+
+</body>
+
+</html>

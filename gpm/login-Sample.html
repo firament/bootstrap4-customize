@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"
+		  href="css/bootstrap-gpm.css">
+	<link rel="stylesheet"
+		  href="css/gpm.css">
+
+	<title>Login Form Sample - Gate Pass Manager</title>
+</head>
+
+<body>
+	<header>
+		<!-- Mast Head -->
+		<nav class="navbar bg-cstm-pri-light border-bottom shadow-light mb-0">
+			<div class="d-flex align-items-center w-100">
+				<div class="d-flex align-items-start flex-fill align-items-baseline">
+					<a class="h1 pl-3 shadow-text-outline text-cstm-pri"
+					   href="../default.htm">Gate Pass Manager</a>
+					<div class="pl-3 text-black-50 d-none d-sm-inline">Process, Track and Manage Gate Passes.</div>
+				</div>
+				<div class="d-flex flex-column justify-content-end">
+					<div class="text-right text-cstm-dark">Anonymous</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Menu bar -->
+		<!-- TODO:
+			Render menu based on user role
+			1. User
+			2. Admin
+			3. Operator
+		-->
+		<!-- Commented for screen space.
+		-->
+	<div class="container-fluid d-none d-sm-block py-1 border-bottom shadow-light">
+		<nav class="nav nav-pills nav-justified p-2">
+			<a class="nav-item nav-link text-cstm-dark bg-cstm-pri-light mx-1 shadow-light"
+			   href="/GatePass/DeptSelect">Patient Pass</a>
+			<a class="nav-item nav-link text-cstm-dark bg-cstm-pri-light mx-1 shadow-light"
+			   href="/GatePass/PassStatus?linkid=0">Checkout Pass</a>
+			<a class="nav-item nav-link text-cstm-dark bg-cstm-pri-light mx-1 shadow-light"
+			   href="/GatePass/Find?linkid=0">Search</a>
+		</nav>
+	</div>
+	</header>
+
+	<!-- ========================================================================================================== -->
+
+	<div class="container-fluid my-3">
+
+		<!-- Sign In Form -->
+		<div class="row p-3">
+
+			<!-- Padding column to push content to right -->
+			<div class="col-1 col-sm-3 col-md-6 col-lg-8 col-xl-8">
+				<div class=""></div>
+			</div>
+
+			<div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xl-4 border border-cstm-pri shadow-light">
+				<div class="h1 display-4 mt-3 text-cstm-pri-dark shadow-text-outline">Sign In:</div>
+
+				<form asp-controller="Session"
+					  asp-action="ValidateCredentials"
+					  method="post"
+					  class="">
+
+					<div class="form-group">
+						<label for="UserID">Login ID:</label>
+						<input type="text"
+							   class="form-control form-control-lg"
+							   id="UserID"
+							   name="UserID"
+							   placeholder=""
+							   maxlength="24"
+							   required>
+						<div class="small text-cstm-alt-1-dark">Case Sensitive. Enter exactly as given by your Administrator.
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="UserPWD">Password:</label>
+						<input type="password"
+							   class="form-control form-control-lg"
+							   id="UserPWD"
+							   name="UserPWD"
+							   maxlength="24"
+							   required>
+						<div class="small text-cstm-alt-1-dark">Case Sensitive. Enter exactly as given by your Administrator.
+						</div>
+					</div>
+
+					<input type="submit"
+						   class="btn btn-lg w-100 btn-cstm-pri border-cstm-dark text-cstm-alt-1-dark shadow-light mb-3"
+						   value="Sign In"
+						   id="dosignin"
+						   name="dosignin">
+
+				</form>
+
+
+			</div> <!-- Column -->
+
+			<!-- 
+			input type = 
+				tel
+				text
+				password
+				email
+				number
+				reset
+		-->
+
+		</div> <!-- Row -->
+
+		<!-- Demo Links -->
+		<div class="row p-3">
+
+			<!-- Padding column to push content to right -->
+			<div class="col-1 col-sm-3 col-md-6 col-lg-8 col-xl-8">
+				<div class=""></div>
+			</div>
+
+			<div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xl-4 border border-cstm-pri shadow-light">
+				<div class="h1 display-4 mt-3 text-cstm-sec-dark shadow-text-outline">Demo Links:</div>
+
+				<div class="form-group">
+					<a asp-controller="Home"
+					   asp-action="IndexUser"
+					   class="btn btn-lg w-100 btn-cstm-alt-2-light border-cstm-dark text-cstm-alt-1-dark shadow-light">Login as User</a>
+					<small class="small text-cstm-alt-1-dark">Enter as User. (Demo Only, remove for production)</small>
+				</div>
+
+				<div class="form-group">
+					<a asp-controller="Home"
+					   asp-action="IndexAdmin"
+					   class="btn btn-lg w-100 btn-cstm-alt-2-light border-cstm-dark text-cstm-alt-1-dark shadow-light">Login as Admin</a>
+					<small class="small text-cstm-alt-1-dark">Enter as Admin. (Demo Only, remove for production)</small>
+				</div>
+
+
+
+			</div> <!-- Column -->
+
+			<!-- 
+					input type = 
+						tel
+						text
+						password
+						email
+						number
+						reset
+				-->
+
+		</div> <!-- Row -->
+
+
+	</div> <!-- container-fluid -->
+
+
+	<!-- ========================================================================================================== -->
+
+
+
+	<!-- ========================================================================================================== -->
+
+	<!-- ========================================================================================================== -->
+
+	<!-- ========================================================================================================== -->
+	<hr class="p-2">
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Fluid jumbotron</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+			</p>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../dist/js/jquery-3.3.1.min.js"></script>
+	<!-- script src="../dist/js/jquery-3.3.1.slim.min.js"></script -->
+	<script src="js/bootstrap-gpm.bundle.min.js"></script>
+
+
+	<!-- ========================================================================================================== -->
+	<!-- fixed footer -->
+	<div class="w-100 p-1">
+		<div class="row">
+			<div>&nbsp;</div>
+		</div>
+	</div>
+	<div class="w-100 fixed-bottom">
+		<div class="text-center text-black-50 small">powered by
+			<a class="text-black-50"
+			   href="http://firament.com/">firament ESP</a>
+		</div>
+	</div>
+
+	<!-- ========================================================================================================== -->
+
+	<footer class="border-top footer text-muted bg-cstm-alt p-1">
+		<div class="container text-center h6 small">
+			Developed by Novelty Data Solutions LLP
+		</div>
+	</footer>
+
+	<small class="text-muted">
+		Someone famous in
+		<cite title="Source Title">Source Title</cite>
+	</small>
+
+</body>
+
+</html>

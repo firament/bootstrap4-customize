@@ -15,3 +15,9 @@ Customize bootstrap 4.x to apply to projects.
 ## Notes
 1. Bundled JS files (bootstrap.bundle.js and minified bootstrap.bundle.min.js) include Popper, but not jQuery.
 2. in script, Add customized lines here for replacing
+3. Start documentation
+```sh
+pushd ../../bootstrap4/bootstrap-4.1.3/;
+bundle exec jekyll serve &
+google-chrome http://localhost:9001 &
+```
